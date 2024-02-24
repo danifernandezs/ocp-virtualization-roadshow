@@ -30,7 +30,8 @@ rosa create machinepools -c "$rosa_cluster_name" \
   --instance-type m5.4xlarge \
   --name odf \
   --replicas 3 \
-  --taints=node.ocs.openshift.io/storage="true":NoSchedule
+  --taints=node.ocs.openshift.io/storage="true":NoSchedule \
+  --labels=cluster.ocs.openshift.io/openshift-storage=""
 
 # Deploy GitOps operator
 
