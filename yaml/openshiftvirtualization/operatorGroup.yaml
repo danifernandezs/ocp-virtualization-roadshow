@@ -5,7 +5,7 @@ metadata:
   name: openshift-cnv
   namespace: openshift-cnv
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   targetNamespaces:
     - openshift-cnv
