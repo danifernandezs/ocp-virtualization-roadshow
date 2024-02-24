@@ -1,7 +1,15 @@
-# ocp-virtualization-roadshow
+# Testing the OCP Virtualization RoadShow - 2024
 Use a ROSA cluster to test and run the OCP Virtualization Roadshow - 2024
 
+# Requirements
+- ROSA cluster
+- ROSA CLI (and a logged user)
+- OC CLI (and a user logged into the cluster)
 
+# TL;DR;
+```bash
+bash bootstrap.sh
+```
 
 ## License
 
