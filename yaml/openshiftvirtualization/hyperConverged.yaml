@@ -6,6 +6,7 @@ metadata:
   namespace: openshift-cnv
   annotations:
     argocd.argoproj.io/sync-wave: "4"
+    argocd.argoproj.io/hook: PostSync
 spec:
   virtualMachineOptions:
     disableFreePageReporting: true
