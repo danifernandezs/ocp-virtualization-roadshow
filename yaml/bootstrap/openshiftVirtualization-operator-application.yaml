@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: openshift-virtualization-operator
+  namespace: openshift-gitops
+  labels:
+    gitops.ownedBy: bootstrap
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: yaml/openshiftvirtualization
+    repoURL: https://github.com/danifernandezs/ocp-virtualization-roadshow.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
