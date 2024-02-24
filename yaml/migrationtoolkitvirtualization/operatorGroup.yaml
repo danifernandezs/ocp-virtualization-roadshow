@@ -5,7 +5,7 @@ metadata:
   name: openshift-mtv
   namespace: openshift-mtv
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   targetNamespaces:
     - openshift-mtv
