@@ -3,4 +3,6 @@ kind: Namespace
 apiVersion: v1
 metadata:
   name: openshift-cnv
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec: {}
