@@ -15,4 +15,5 @@ spec:
     path: yaml/gitops-operator
     repoURL: https://github.com/danifernandezs/ocp-virtualization-roadshow.git
     targetRevision: main
-  syncPolicy: {}
+  syncPolicy:
+    automated: {}
