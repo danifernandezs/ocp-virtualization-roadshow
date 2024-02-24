@@ -4,6 +4,8 @@ kind: OperatorGroup
 metadata:
   name: openshift-mtv
   namespace: openshift-mtv
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   targetNamespaces:
     - openshift-mtv
