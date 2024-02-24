@@ -16,4 +16,5 @@ spec:
     repoURL: https://github.com/danifernandezs/ocp-virtualization-roadshow.git
     targetRevision: main
   syncPolicy:
-    automated: {}
+    automated:
+      selfHeal: true
